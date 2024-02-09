@@ -2,7 +2,6 @@ import logo from './assets/logo-nlw-expert.svg'
 import { NewNodeCard } from './components/new-node-card'
 import { NoteCard } from './components/node-card'
 
-
 export function App() {
   return (
     <div className='mx-auto max-w-6xl my-12 space-y-6'>
@@ -22,14 +21,10 @@ export function App() {
 
         <NewNodeCard />
 
-        <NoteCard />
-
-        <NoteCard />
-
-        <NoteCard />
-
-        <NoteCard />
-
+        <NoteCard note={{
+          date: new Date(),
+          content: 'Hello World'
+        }}/>
 
       </div>
 
