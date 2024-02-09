@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as Dialog from '@radix-ui/react-dialog'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
@@ -16,17 +17,22 @@ interface NoteCardProps {
 }
 
 export function NoteCard({note, onNoteDeleted}: NoteCardProps) {
+=======
+export function NoteCard() {
+>>>>>>> parent of 0427c63 (aula 02)
     return (
-        <Dialog.Root>
-        <Dialog.Trigger className='rounded-md text-left flex flex-col bg-slate-800 p-5 gap-3 overflow-hidden relative outline-none hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-lime-400'>
+        <div className='rounded-md bg-slate-800 p-5 space-y-3 overflow-hidden relative'>
             <span  className='text-sm font-medium text-slate-300'>
+<<<<<<< HEAD
                 {formatDistanceToNow(note.date, { locale: ptBR, addSuffix: true })}
+=======
+                há 2 dias
+>>>>>>> parent of 0427c63 (aula 02)
             </span>
-            <p className='text-sm leading-6 text-slate-400'>
-                {note.content}
-            </p>
+            <p className='text-sm leading-6 font-regular text-slate-400'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid quae iste laborum in itaque! Aspernatur impedit fugit recusandae amet sed laudantium eligendi perferendis pariatur? Aliquid fugit ipsam libero a!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid quae iste laborum in itaque! Aspernatur impedit fugit recusandae amet sed laudantium eligendi perferendis pariatur? Aliquid fugit ipsam libero a!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid quae iste laborum in itaque! Aspernatur impedit fugit recusandae amet sed laudantium eligendi perferendis pariatur? Aliquid fugit ipsam libero a!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid quae iste laborum in itaque! Aspernatur impedit fugit recusandae amet sed laudantium eligendi perferendis pariatur? Aliquid fugit ipsam libero a!</p>
 
             <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/60 to-black/0 pointer-events-none" />
+<<<<<<< HEAD
         </Dialog.Trigger>
 
         <Dialog.Portal>
@@ -57,5 +63,8 @@ export function NoteCard({note, onNoteDeleted}: NoteCardProps) {
         </Dialog.Portal>
 
         </Dialog.Root>
+=======
+        </div>
+>>>>>>> parent of 0427c63 (aula 02)
     )
 }
